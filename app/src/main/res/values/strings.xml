@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Name Entry</string>
+    <string name="enter"> Enter your name</string>
+    <string name="press"> Press me</string>
+    <string name="dontpress"> Do not Press me</string>
+    <string name="greeting">Bonjour</string>
+</resources>
