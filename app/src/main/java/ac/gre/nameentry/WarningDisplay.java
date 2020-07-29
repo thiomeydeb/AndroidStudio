@@ -2,6 +2,7 @@ package ac.gre.nameentry;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 public class WarningDisplay extends Activity {
     public static final String NAME = "name";

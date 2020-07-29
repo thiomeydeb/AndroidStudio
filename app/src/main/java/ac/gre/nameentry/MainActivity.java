@@ -1,11 +1,10 @@
 package ac.gre.nameentry;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.app.Activity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Button;
 import android.content.Intent;
 
@@ -19,13 +18,21 @@ public class MainActivity extends AppCompatActivity {
         //TextView tv= new TextView(this);
         //setText("App says Lollipop") ;
         setContentView(R.layout.activity_main);
-        mNameText = (EditText) findViewById(R.id.name);
-        Button theButton = (Button) findViewById(R.id.press);
-        theButton.setOnClickListener(new View.OnClickListener() {
+        mNameText = (EditText) findViewById(R.id.txtName);
+        Button btnPress = (Button) findViewById(R.id.btnPress);
+        Button btnDontPress = (Button) findViewById(R.id.btnDontPress);
+        btnPress.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 handleButtonClick();
             }
         });
+        btnDontPress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                click(view);
+            }
+        });
+
     }
     private void handleButtonClick() {
         String strName = mNameText.getText().toString();

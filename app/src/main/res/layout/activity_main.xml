@@ -13,16 +13,16 @@
         android:text="@string/enter"
         android:textSize="24sp"/>
 
-    <EditText android:id="@+id/name"
+    <EditText android:id="@+id/txtName"
         android:inputType="textNoSuggestions"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"/>
 
-    <Button android:id="@+id/press"
+    <Button android:id="@+id/btnPress"
         android:text="@string/press"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <Button android:id="@+id/dontpress"
+    <Button android:id="@+id/btnDontPress"
         android:text="@string/dontpress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
